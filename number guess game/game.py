@@ -12,8 +12,8 @@ high=int(input("enter a higest number:"))
 print(f"\nYou have 7 chances to guess the number between {low} and {high}. Let's start!")
 
 num = random.randint(low,high)
-nc=7
-gc=0
+nc=7   # number of chances
+gc=0     # guess count
 
 while gc < nc:
     gc += 1     
@@ -30,3 +30,4 @@ while gc < nc:
         print("your guess is too high")
     elif guess < num:
         print("your guess is too low")
+
